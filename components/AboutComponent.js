@@ -1,9 +1,7 @@
-import React, { Component } from 'react';
-import {ScrollView, Text } from 'react-native';
-import { Card, ListItem } from 'react-native-elements';
-import { PARTNERS } from '../shared/partners.js';
-import { FlatList } from 'react-native-gesture-handler';
-
+import React, { Component } from "react";
+import { ScrollView, Text, FlatList } from "react-native";
+import { Card, ListItem } from "react-native-elements";
+import { PARTNERS } from '../shared/partners';
 
 class About extends Component {
     constructor(props) {
@@ -53,7 +51,6 @@ function Mission () {
             the public while promoting safe and respectful use of resources. The expert wilderness trekkers on our staff personally verify each campsite to make sure 
             that they are up to our standards. We also present a platform for campers to share reviews on campsites they have visited with each other.
             </Text>
-
         </Card>
     );
 }
