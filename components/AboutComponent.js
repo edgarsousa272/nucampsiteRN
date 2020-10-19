@@ -16,8 +16,11 @@ class About extends Component {
     }
 
     render() {
-        
+        console.log("partner", this.state.partners)
+
         const renderPartner = ({item}) => {
+            console.log("item", item)
+            
             return (
                 <ListItem
                     title={item.name}
@@ -31,10 +34,10 @@ class About extends Component {
             <ScrollView>
                 <Mission/>
                 <Card title="Community Partners">
-                    <FlatList>
+                    <FlatList
                         data={this.state.partners}
                         renderItem={renderPartner}
-                        keyExtractor={item => item.id.toString()}
+                        keyExtractor={item => item.id.toString()}>
                     </FlatList>
                 </Card>
             </ScrollView>
