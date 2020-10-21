@@ -20,7 +20,7 @@ class About extends Component {
 
         const renderPartner = ({item}) => {
             console.log("item", item)
-            
+
             return (
                 <ListItem
                     title={item.name}
